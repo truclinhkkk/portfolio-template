@@ -1,0 +1,4 @@
+[build]
+  base = "academic-site"
+  command = "echo Static portfolio ready"
+  publish = "."
