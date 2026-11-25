@@ -1,4 +1,7 @@
 [build]
   base = "academic-site"
-  command = "echo Static portfolio ready"
-  publish = "."
+  command = "mkdir -p dist && cp index.html style.css site.js dist/"
+  publish = "dist"
+
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
